@@ -1,0 +1,62 @@
+{
+    "name": "pcf-react",
+    "version": "1.0.0",
+    "description": "A PowerApps Component Framework React starter kit",
+    "scripts": {
+      "//NPM": "*****************************************************************",
+      "buildDev": "npx eslint src && npx webpack --config webpack/config.dev.js",
+      "buildDevChunk": "npx eslint src && npx webpack --config webpack/config.dev.chunk.js",
+      "buildDevForm": "npx eslint src && npx webpack --config webpack/config.dev.form.js",
+      "buildPrd": "npx webpack --config webpack/config.prd.js",
+      "buildPrdChunk": "npx webpack --config webpack/config.prd.chunk.js",
+      "buildPrdForm": "npx webpack --config webpack/config.prd.form.js",
+      "//pcr-react": "*****************************************************************",
+      "test": "npx jest --verbose ./test"
+    },
+    "keywords": [
+      "pcf",
+      "react",
+      "PowerApps Control Framework"
+    ],
+    "author": "Rex Kenley Tan",
+    "license": "ISC",
+    "dependencies": {
+      "@babel/runtime-corejs3": "^7.6.3",
+      "@types/jest": "^24.0.21",
+      "@uifabric/icons": "^7.3.0",
+      "clean-webpack-plugin": "^3.0.0",
+      "core-js": "^3.3.5",
+      "lodash": "^4.17.15",
+      "npm-check": "^5.9.0",
+      "office-ui-fabric-react": "^7.56.3",
+      "pug": "^2.0.4",
+      "react": "^16.11.0",
+      "react-dom": "^16.11.0",
+      "react-redux": "^7.1.1",
+      "redux": "^4.0.4",
+      "redux-thunk": "^2.3.0",
+      "webpack": "^4.41.2",
+      "webpack-bundle-analyzer": "^3.6.0",
+      "webpack-merge": "^4.2.2"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.6.4",
+      "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+      "@babel/plugin-transform-runtime": "^7.6.2",
+      "@babel/preset-env": "^7.6.3",
+      "@babel/preset-react": "^7.6.3",
+      "babel-eslint": "^10.0.3",
+      "babel-jest": "^24.9.0",
+      "babel-loader": "^8.0.6",
+      "eslint": "^6.6.0",
+      "eslint-config-airbnb": "^18.0.1",
+      "eslint-plugin-import": "^2.18.2",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.16.0",
+      "jest": "^24.9.0",
+      "prettier": "^1.18.2",
+      "pug-cli": "^1.0.0-alpha6",
+      "webpack-cli": "^3.3.9"
+    }
+  }
+  
