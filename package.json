@@ -12,7 +12,7 @@
     "buildPrdForm": "npx webpack --config webpack/config.prd.form.js",
     "//pcr-react": "*****************************************************************",
     "test": "npx jest --verbose ./test",
-    "doc": "npx jsdoc -c jsDoc.json"
+    "doc": "npx jsdoc -c jsdoc.json"
   },
   "keywords": [
     "pcf",
