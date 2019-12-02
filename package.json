@@ -20,7 +20,7 @@
     "PowerApps Control Framework"
   ],
   "author": "Rex Kenley Tan",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime-corejs3": "^7.6.3",
     "@types/jest": "^24.0.21",
