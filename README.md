@@ -21,4 +21,10 @@ deploy\Other\Solution.xml
 - UniqueName
 - LocalizedName description="" languagecode="1033"
 
+**Core Packages**
+- [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Storybook](https://storybook.js.org/)
+  - [Learn Storybook](https://www.learnstorybook.com/)
+
 **Coming Soon after the sdk goes live**
