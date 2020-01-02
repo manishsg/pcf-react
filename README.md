@@ -26,5 +26,6 @@ deploy\Other\Solution.xml
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Storybook](https://storybook.js.org/)
   - [Learn Storybook](https://www.learnstorybook.com/)
+  - [React & Storybook for a Component-Driven, Atomic Designed, 💯 Tested, Accessible Frontend](https://www.youtube.com/watch?v=vWYiyN9amsc)
 
 **Coming Soon after the sdk goes live**
