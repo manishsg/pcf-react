@@ -7,6 +7,8 @@ A PowerApps Component Framework React starter kit
 - [Package a code component](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/import-custom-controls)
 - [Create a React component library with TypeScript and Storybook](https://levelup.gitconnected.com/create-a-react-component-library-with-typescript-and-storybook-ed28fc7511f2)
 - [5 Ways to Document React Components in 2020](https://blog.bitsrc.io/5-ways-to-document-react-components-in-2020-ecf60f24dee8)
+- [Comparing React testing libraries](https://blog.logrocket.com/comparing-react-testing-libraries)
+- [Static vs Unit vs Integration vs E2E Testing for Frontend Apps](https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests)
 
 **Project creation steps**
 1. md ProjectName & cd ProjectName
