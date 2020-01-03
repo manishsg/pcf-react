@@ -25,7 +25,7 @@ deploy\Other\Solution.xml
 - LocalizedName description="" languagecode="1033"
 
 **Additional npms**
-- npm i react react-dom office-ui-fabric-react @uifabric/icons @reduxjs/toolkit @types/jest
+- npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
 - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react eslint 
 - npm i -D -E prettier
 
