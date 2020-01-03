@@ -26,7 +26,7 @@ deploy\Other\Solution.xml
 
 **Additional npms**
 - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
-- npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react eslint eslint-config-prettier
+- npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react eslint eslint-config-prettier eslint-plugin-prettier
 - npm i -D -E prettier
 
 **Core Packages**
