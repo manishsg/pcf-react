@@ -17,9 +17,17 @@ A PowerApps Component Framework React starter kit
 6. pac solution add-reference --path ..\
 7. msbuild /t:build /restore /p:configuration=Release
 
+tsconfig.json
+- add  "noImplicitAny": false to compilerOptions
+
 deploy\Other\Solution.xml 
 - UniqueName
 - LocalizedName description="" languagecode="1033"
+
+**Additional npms**
+- npm i react react-dom office-ui-fabric-react @uifabric/icons @reduxjs/toolkit @types/jest
+- npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react eslint 
+- npm i -D -E prettier
 
 **Core Packages**
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
