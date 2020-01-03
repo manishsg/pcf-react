@@ -32,8 +32,16 @@ deploy\Other\Solution.xml
 **Core Packages**
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+
+**Design, Documentation, Type Checking & Lint**
 - [Storybook](https://storybook.js.org/)
   - [Learn Storybook](https://www.learnstorybook.com/)
   - [React & Storybook for a Component-Driven, Atomic Designed, 💯 Tested, Accessible Frontend](https://www.youtube.com/watch?v=vWYiyN9amsc)
+- [JSDoc](https://jsdoc.app/)
+- [ESLint](https://eslint.org)/[Prettier](https://prettier.io)
+  - [Integrating with Linters](https://prettier.io/docs/en/integrating-with-linters.html)
+
+**Testing**
+- [Jest](https://jestjs.io)
 
 **Coming Soon after the sdk goes live**
