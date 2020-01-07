@@ -6,11 +6,11 @@ A PowerApps Component Framework React starter kit
 2. pac pcf init --namespace <> --name <> --template <>
 3. npm i & npm run build
 4. edit tsconfig.json
-  - add  "noImplicitAny": false to compilerOptions
+    - add "noImplicitAny": false to compilerOptions
 5. install npms
-  - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
-  - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react @storybook/addon-actions eslint eslint-config-prettier eslint-plugin-prettier
-  - npm i -D -E prettier
+    - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
+    - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react @storybook/addon-actions eslint eslint-config-prettier eslint-plugin-prettier
+    - npm i -D -E prettier
 
 **Project deploy file creation steps**
 1. md deploy & cd deploy (in ProjectName folder)
@@ -18,8 +18,8 @@ A PowerApps Component Framework React starter kit
 3. pac solution add-reference --path ..\
 4. msbuild /t:build /restore /p:configuration=Release
 5. edit deploy\Other\Solution.xml 
-  - UniqueName
-  - LocalizedName description="" languagecode="1033"
+    - UniqueName
+    - LocalizedName description="" languagecode="1033"
 
 **Core Packages**
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
