@@ -23,6 +23,10 @@ A PowerApps Component Framework React starter kit
     - UniqueName
     - LocalizedName description="" languagecode="1033"
 
+**Architectural notes**
+
+This project views the index.ts as a "wrapper". It only hosts the actual SamplePCF and passes the parameters as props. For more complicated controls, I would recommend using the redux toolkit and expose the appropriate actions. If you are using actions then there is no need to do the ReactDOM.render in updateView.
+
 **Core Packages**
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
