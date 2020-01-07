@@ -1,7 +1,11 @@
 import { configure } from "@storybook/react";
 import { configureActions } from "@storybook/addon-actions";
 
-configure(require.context("../src", true, /\.stories\.js$/), module);
+const req = require.context("../stories", true, /\.stories\.js$/);
+function loadStories() {
+  req.keys().forEach(filename => req(filename));
+}
+configure(loadStories, module);
 
 configureActions({
   depth: 100,
