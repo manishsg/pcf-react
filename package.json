@@ -5,7 +5,8 @@
   "scripts": {
     "storybook": "start-storybook",
     "lint": "eslint --ext .jsx,.js src/",
-    "test": "npx jest --verbose ./test",    
+    "test": "npx jest --verbose ./test",
+    "doc": "jsdoc -c jsdoc.json",    
     "//NPM": "*****************************************************************",
     "buildDev": "npx eslint src && npx webpack --config webpack/config.dev.js",
     "buildDevChunk": "npx eslint src && npx webpack --config webpack/config.dev.chunk.js",
