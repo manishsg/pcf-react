@@ -18,10 +18,10 @@ A PowerApps Component Framework React starter kit
 1. md deploy & cd deploy (in ProjectName folder)
 2. pac solution init --publisher-name <> --publisher-prefix <>
 3. pac solution add-reference --path ..\
-4. msbuild /t:build /restore /p:configuration=Release
-5. edit deploy\Other\Solution.xml 
+4. edit deploy\Other\Solution.xml 
     - UniqueName
     - LocalizedName description="" languagecode="1033"
+5. msbuild /t:build /restore /p:configuration=Release
 
 **Architectural notes**
 
