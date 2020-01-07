@@ -11,6 +11,8 @@ A PowerApps Component Framework React starter kit
     - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
     - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react @storybook/addon-actions eslint eslint-config-prettier eslint-plugin-prettier
     - npm i -D -E prettier
+6. copy the .jest & .storybook configuration folders
+7. copy test/storyShots.test.js to your test folder
 
 **Project deploy file creation steps**
 1. md deploy & cd deploy (in ProjectName folder)
