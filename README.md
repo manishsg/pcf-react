@@ -1,6 +1,10 @@
 # pcf-react
 A PowerApps Component Framework React starter kit
 
+**PCF Installation**
+
+[Get tooling for Power Apps component framework](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/get-powerapps-cli)
+
 **Project creation steps**
 1. md ProjectName & cd ProjectName
 2. pac pcf init --namespace <> --name <> --template <>
@@ -43,8 +47,7 @@ This project views the index.ts as a "wrapper". It only hosts the actual SampleP
 - [Jest](https://jestjs.io)
 
 **Reference**
-- [Use of React and Office UI Fabric React in the PowerApps component framework is now available for public preview](https://powerapps.microsoft.com/en-us/blog/use-of-react-and-office-ui-fabric-react-in-the-powerapps-component-framework-is-now-available-for-public-preview/)
-- [Get tooling for PowerApps component framework](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/get-powerapps-cli)
+- [Use of React and Office UI Fabric React in the PowerApps component framework is now available for public preview](https://powerapps.microsoft.com/en-us/blog/use-of-react-and-office-ui-fabric-react-in-the-powerapps-component-framework-is-now-available-for-public-preview)
 - [Create and build a code component](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/create-custom-controls-using-pcf)
 - [Package a code component](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/import-custom-controls)
 - [Create a React component library with TypeScript and Storybook](https://levelup.gitconnected.com/create-a-react-component-library-with-typescript-and-storybook-ed28fc7511f2)
