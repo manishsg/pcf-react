@@ -6,6 +6,7 @@
     "storybook": "start-storybook",
     "lint": "eslint --ext .jsx,.js src/",
     "test": "npx jest --verbose ./test",
+    "test:update": "npx jest --updateSnapshot --verbose ./test",
     "test:output": "npx jest --verbose ./test --json --outputFile=./test/.jest-test-results.json",
     "doc": "jsdoc -c jsdoc.json",    
     "//NPM": "*****************************************************************",
