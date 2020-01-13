@@ -7,7 +7,7 @@
     "lint": "eslint --ext .jsx,.js src/",
     "test": "npx jest --verbose ./test",
     "test:update": "npx jest --updateSnapshot --verbose ./test",
-    "test:output": "npx jest --verbose ./test --json --outputFile=./test/.jest-test-results.json",
+    "test:output": "npx jest --verbose ./test --json --outputFile=./test/__results__/.jest-test-results.json",
     "doc": "jsdoc -c jsdoc.json",    
     "//NPM": "*****************************************************************",
     "buildDev": "npx eslint src && npx webpack --config webpack/config.dev.js",
