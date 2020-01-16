@@ -29,7 +29,9 @@ A PowerApps Component Framework React starter kit
 
 **Architectural notes**
 
-This project views the index.ts as a "wrapper". It only hosts the actual SamplePCF and passes the parameters as props. For more complicated controls, I would recommend using the redux toolkit and expose the appropriate actions. If you are using actions then there is no need to do the ReactDOM.render in updateView.
+This project views the index.ts as a "wrapper". It only hosts the actual SamplePCF and passes the parameters as props. For more complicated controls, I would recommend using the redux toolkit and expose the appropriate actions. If you are using actions then there is no need to do the ReactDOM.render in updateView. You may however need to consider when setDisabled or setVisible is called on the control. You can get these values from the context object. 
+- context.mode.isControlDisabled
+- context.mode.isVisible
 
 **Core Packages**
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
