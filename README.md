@@ -18,6 +18,7 @@ A PowerApps Component Framework React starter kit
 6. copy .eslintrc.json
 7. copy the .jest & .storybook configuration folders
 8. copy test/storyShots.test.js to your test folder
+9. Copy the scripts section of package.json
 
 **Project deploy file creation steps**
 1. md deploy & cd deploy (in ProjectName folder)
