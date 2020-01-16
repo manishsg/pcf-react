@@ -15,7 +15,7 @@ A PowerApps Component Framework React starter kit
     - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
     - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest eslint eslint-config-prettier eslint-plugin-prettier
     - npm i -D -E prettier
-6. copy .eslintrc.json
+6. copy .eslintrc.json, babel.config.js, jest.config.js and jsdoc.json
 7. copy the .jest & .storybook configuration folders
 8. copy test/storyShots.test.js to your test folder
 9. Copy the scripts section of package.json
