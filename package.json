@@ -25,7 +25,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.2.1",
     "@types/jest": "^24.0.25",
-    "@types/node": "^10.12.18",
+    "@types/node": "^13.1.7",
     "@types/powerapps-component-framework": "^1.2.0",
     "@uifabric/icons": "^7.3.0",
     "office-ui-fabric-react": "^7.78.1",
@@ -55,7 +55,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "jest": "^24.9.0",
     "jsdoc": "^3.6.3",
     "pcf-scripts": "^1",
