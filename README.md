@@ -13,7 +13,7 @@ A PowerApps Component Framework React starter kit
     - add "noImplicitAny": false to compilerOptions
 5. install npms
     - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
-    - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest eslint eslint-config-prettier eslint-plugin-prettier
+    - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint babel-plugin-require-context-hook jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest eslint eslint-config-prettier eslint-plugin-prettier
     - npm i -D -E prettier
 6. copy .eslintrc.json, babel.config.js, jest.config.js and jsdoc.json
 7. copy the .jest & .storybook configuration folders
