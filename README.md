@@ -10,7 +10,7 @@ A PowerApps Component Framework React starter kit
 2. pac pcf init --namespace <> --name <> --template <>
 3. npm i & npm run build
 4. edit tsconfig.json
-    - add "noImplicitAny": false to compilerOptions
+    - add **"noImplicitAny": false** to compilerOptions
 5. install npms
     - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
     - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint babel-plugin-require-context-hook jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest @storybook/addon-storyshots eslint eslint-config-prettier eslint-plugin-prettier
