@@ -46,6 +46,8 @@ export class DatetimeBox
       React.createElement(SamplePCF, {
         // @ts-ignore
         value: this.value,
+        disabled: this.isControlDisabled,
+        hidden: !this.isVisible,
         onSampleChange: val => {
           this.value = val;
           this.updatedByReact = true;
@@ -82,6 +84,8 @@ export class DatetimeBox
       React.createElement(SamplePCF, {
         // @ts-ignore
         value: this.value,
+        disabled: this.isControlDisabled,
+        hidden: !this.isVisible,
         onSampleChange: val => {
           this.value = val;
           this.updatedByReact = true;
