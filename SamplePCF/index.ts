@@ -6,7 +6,7 @@ export class DatetimeBox
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   private container: HTMLDivElement;
   private notifyOutputChanged: () => void;
-  private current: object | null;
+  private value: object | null;
   private updatedByReact: boolean;
   private isControlDisabled: boolean;
   private isVisible: boolean;
@@ -35,19 +35,19 @@ export class DatetimeBox
 
     this.container = container;
     this.notifyOutputChanged = notifyOutputChanged;
-    this.current = (value && value.raw) || null;
+    this.value = (value && value.raw) || null;
     this.updatedByReact = false;
     this.isControlDisabled = isControlDisabled;
     this.isVisible = isVisible;
-      
+
     // Add control initialization code
     ReactDOM.render(
       // @ts-ignore
       React.createElement(SamplePCF, {
         // @ts-ignore
-        value: this.current,
-        onSampleChange: value => {
-          this.current = value;
+        value: this.value,
+        onSampleChange: val => {
+          this.value = val;
           this.updatedByReact = true;
           this.notifyOutputChanged();
         }
@@ -64,35 +64,32 @@ export class DatetimeBox
     // Add code to update control view
     const { parameters, mode } = context,
       { value } = parameters,
-      { isControlDisabled, isVisible } = mode;
+      { isControlDisabled, isVisible } = mode,
+      equivalent = this.value === value.raw;
 
-    if (
-      this.isVisible !== isVisible ||
-      this.isControlDisabled !== isControlDisabled
-    ) {
-      this.isControlDisabled = isControlDisabled;
-      this.isVisible = isVisible;
-    } else if (this.updatedByReact) {
-      if (this.current === value.raw) this.updatedByReact = false;
+    if (this.updatedByReact) {
+      if (equivalent) this.updatedByReact = false;
 
       return;
     }
 
-    this.current = value.raw || null;
+    this.value = value.raw || null;
+    this.isControlDisabled = isControlDisabled;
+    this.isVisible = isVisible;
 
     ReactDOM.render(
       // @ts-ignore
       React.createElement(SamplePCF, {
         // @ts-ignore
-        value: this.current,
-        onSampleChange: value => {
-          this.current = value;
+        value: this.value,
+        onSampleChange: val => {
+          this.value = val;
           this.updatedByReact = true;
           this.notifyOutputChanged();
         }
       }),
       this.container
-    );    
+    );
   }
 
   /**
@@ -101,7 +98,7 @@ export class DatetimeBox
    */
   public getOutputs(): IOutputs {
     //@ts-ignore
-    return { value: this.current };
+    return { value: this.value };
   }
 
   /**
