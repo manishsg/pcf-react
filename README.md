@@ -1,4 +1,5 @@
 # pcf-react
+
 A PowerApps Component Framework React starter kit
 
 **PCF Installation**
@@ -6,15 +7,16 @@ A PowerApps Component Framework React starter kit
 [Get tooling for Power Apps component framework](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/get-powerapps-cli)
 
 **Project creation steps**
+
 1. md ProjectName & cd ProjectName
 2. pac pcf init --namespace <> --name <> --template <>
 3. npm i & npm run build
 4. edit tsconfig.json
-    - add **"noImplicitAny": false** to compilerOptions
+   - add **"noImplicitAny": false** to compilerOptions
 5. install npms
-    - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
-    - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint babel-plugin-require-context-hook jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest @storybook/addon-storyshots eslint eslint-config-prettier eslint-plugin-prettier
-    - npm i -D -E prettier
+   - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
+   - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint babel-plugin-require-context-hook jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest @storybook/addon-storyshots eslint eslint-config-prettier eslint-plugin-prettier react-test-renderer
+   - npm i -D -E prettier
 6. copy .eslintrc.json, .gitignore, babel.config.js, jest.config.js and jsdoc.json
 7. copy the .jest & .storybook configuration folders
 8. copy test/storyShots.test.js to your test folder
@@ -22,25 +24,29 @@ A PowerApps Component Framework React starter kit
 10. Copy the scripts section of package.json
 
 **Project deploy file creation steps**
+
 1. md deploy & cd deploy (in ProjectName folder)
 2. pac solution init --publisher-name <> --publisher-prefix <>
 3. pac solution add-reference --path ..\
-4. edit deploy\Other\Solution.xml 
-    - UniqueName
-    - LocalizedName description="" languagecode="1033"
+4. edit deploy\Other\Solution.xml
+   - UniqueName
+   - LocalizedName description="" languagecode="1033"
 5. msbuild /t:build /restore /p:configuration=Release
 
 **Architectural notes**
 
-This project views the index.ts as a "wrapper". It only hosts the actual SamplePCF and passes the parameters as props. For more complicated controls, I would recommend using the redux toolkit and expose the appropriate actions. If you are using actions then there is no need to do the ReactDOM.render in updateView. You may however need to consider when setDisabled or setVisible is called on the control. You can get these values from the context object. 
+This project views the index.ts as a "wrapper". It only hosts the actual SamplePCF and passes the parameters as props. For more complicated controls, I would recommend using the redux toolkit and expose the appropriate actions. If you are using actions then there is no need to do the ReactDOM.render in updateView. You may however need to consider when setDisabled or setVisible is called on the control. You can get these values from the context object.
+
 - context.mode.isControlDisabled
 - context.mode.isVisible
 
 **Core Packages**
+
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 
 **Design, Documentation, Type Checking & Lint**
+
 - [Storybook](https://storybook.js.org/)
   - [Learn Storybook](https://www.learnstorybook.com/)
   - [React & Storybook for a Component-Driven, Atomic Designed, 💯 Tested, Accessible Frontend](https://www.youtube.com/watch?v=vWYiyN9amsc)
@@ -49,9 +55,11 @@ This project views the index.ts as a "wrapper". It only hosts the actual SampleP
   - [Integrating with Linters](https://prettier.io/docs/en/integrating-with-linters.html)
 
 **Testing**
+
 - [Jest](https://jestjs.io)
 
 **References**
+
 - [Power Apps component framework API reference](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/reference/)
 - [Use of React and Office UI Fabric React in the PowerApps component framework is now available for public preview](https://powerapps.microsoft.com/en-us/blog/use-of-react-and-office-ui-fabric-react-in-the-powerapps-component-framework-is-now-available-for-public-preview)
 - [Create and build a code component](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/create-custom-controls-using-pcf)
