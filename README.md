@@ -40,6 +40,15 @@ This project views the index.ts as a "wrapper". It only hosts the actual SampleP
 - context.mode.isControlDisabled
 - context.mode.isVisible
 
+**Web Workers**
+
+It is actually very simple to add web workers into pcf. [Google Webworker Plugin](https://github.com/GoogleChromeLabs/worker-plugin)
+
+1. npm i -D worker-plugin
+2. edit webpackConfig.js in node_modules\pcf-scripts
+   - add at line 2 **const WorkerPlugin = require('worker-plugin');**
+   - add at line 76 **plugins: [new WorkerPlugin()]**
+
 **Core Packages**
 
 - [UI Fabric](https://developer.microsoft.com/en-us/fabric#/controls/web)
