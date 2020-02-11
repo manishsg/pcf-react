@@ -42,7 +42,7 @@ This project views the index.ts as a "wrapper". It only hosts the actual SampleP
 
 **Web Workers**
 
-It is actually very simple to add web workers into pcf. [Google Webworker Plugin](https://github.com/GoogleChromeLabs/worker-plugin)
+It is actually very simple to add web workers into pcf. You can use the example in [Google Webworker Plugin](https://github.com/GoogleChromeLabs/worker-plugin) to test this feature. 
 
 1. npm i -D worker-plugin
 2. edit webpackConfig.js in node_modules\pcf-scripts
