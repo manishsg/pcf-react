@@ -40,6 +40,11 @@ This project views the index.ts as a "wrapper". It only hosts the actual SampleP
 - context.mode.isControlDisabled
 - context.mode.isVisible
 
+**Stores**
+- [XState](https://xstate.js.org/docs/) - JavaScript and TypeScript finite state machines and statecharts for the modern web.
+- [Redux Toolkit](https://redux-toolkit.js.org/) - The official, opinionated, batteries-included toolset for efficient Redux development
+- [MobX](https://mobx.js.org/README.html) - Simple, scalable state management
+
 **Web Workers**
 
 It is actually very simple to add web workers into pcf. You can use the example in [Google Webworker Plugin](https://github.com/GoogleChromeLabs/worker-plugin) to test this feature. 
