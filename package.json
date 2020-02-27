@@ -23,7 +23,6 @@
   "author": "Rex Kenley Tan",
   "license": "MIT",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.2.3",
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.8",
     "@types/powerapps-component-framework": "^1.2.0",
