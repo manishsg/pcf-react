@@ -14,9 +14,8 @@ A PowerApps Component Framework React starter kit
 4. edit tsconfig.json
    - add **"noImplicitAny": false** to compilerOptions
 5. install npms
-   - npm i react react-dom office-ui-fabric-react @uifabric/icons react-redux @reduxjs/toolkit @types/jest
-   - npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react babel-jest babel-eslint babel-plugin-require-context-hook jest jsdoc @storybook/react @storybook/addon-actions @storybook/addon-jest @storybook/addon-storyshots eslint eslint-config-prettier eslint-plugin-prettier react-test-renderer
-   - npm i -D -E prettier
+   - npm i @types/node @types/jest @types/powerapps-component-framework @uifabric/icons office-ui-fabric-react react react-dom
+   - npm i -D @babel/core @babel/preset-env @babel/preset-react @storybook/addon-actions @storybook/addon-jest @storybook/addon-storyshots @storybook/react @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint babel-jest babel-loader babel-plugin-add-module-exports babel-plugin-require-context-hook eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks jest jsdoc prettier react-test-renderer
 6. copy .eslintrc.json, .gitignore, babel.config.js, jest.config.js and jsdoc.json
 7. copy the .jest & .storybook configuration folders
 8. copy test/storyShots.test.js to your test folder
@@ -41,13 +40,14 @@ This project views the index.ts as a "wrapper". It only hosts the actual SampleP
 - context.mode.isVisible
 
 **Stores**
+
 - [XState](https://xstate.js.org/docs/) - JavaScript and TypeScript finite state machines and statecharts for the modern web.
 - [Redux Toolkit](https://redux-toolkit.js.org/) - The official, opinionated, batteries-included toolset for efficient Redux development
 - [MobX](https://mobx.js.org/README.html) - Simple, scalable state management
 
 **Web Workers**
 
-It is actually very simple to add web workers into pcf. You can use the example in [Google Webworker Plugin](https://github.com/GoogleChromeLabs/worker-plugin) to test this feature. 
+It is actually very simple to add web workers into pcf. You can use the example in [Google Webworker Plugin](https://github.com/GoogleChromeLabs/worker-plugin) to test this feature.
 
 1. npm i -D worker-plugin
 2. edit webpackConfig.js in node_modules\pcf-scripts
