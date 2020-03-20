@@ -84,3 +84,4 @@ It is actually very simple to add web workers into pcf. You can use the example 
 - [5 Ways to Document React Components in 2020](https://blog.bitsrc.io/5-ways-to-document-react-components-in-2020-ecf60f24dee8)
 - [Comparing React testing libraries](https://blog.logrocket.com/comparing-react-testing-libraries)
 - [Static vs Unit vs Integration vs E2E Testing for Frontend Apps](https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests)
+- [5 Tips to Improve the Performance of Your React Apps](https://alligator.io/react/keep-react-fast/)
